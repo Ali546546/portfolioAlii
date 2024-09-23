@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.head_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:#007185; */  
+}
+.head_section ul{
+    display: flex;
+}
+.head_section ul li{
+    list-style: none;
+}
+.head_section ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.head_section img{
+    height: 50px;
+    width: 70px;
+    margin-left: 50px;
+}
+.body{
+    height: 700px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+.inside_body{
+    display: flex;
+    height:500px;
+    width: 100%;
+    
+}
+.inner_body{
+    border-radius: 270px;
+    background-color: yellow;
+    margin-left: 100px;
+    height:400px;
+    width:400px;
+    margin-top: 100px;
+}
+.inner_body img{
+    height:400px;
+    width:400px;
+    border-radius: 270px 90px 270px 90px;
+}
+.inside_body h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-left: 30px;
+    height: 200px;
+    width: 300px;
+    margin-top: 90px;
+    color: white;
+}
+.inside_body h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 250px;
+    margin-left: -300px;
+    width: 50%;
+    font-weight: bold;
+    color: white;
+}
+.inside_body p{
+    height: 300px;
+    width: 40%;
+    margin-top: 190px;
+    margin-left: -140px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    display: flex;
+    height: 40px;
+    width: 350px;
+    background-color: blue;
+    border-radius: 90px;
+    margin-top: 380px;
+    margin-left: -360px;
+}
+.img{
+    height: 30px;
+    width: 30px;
+    background-color: aquamarine;
+    border-radius: 90px;
+    margin: auto;
+    margin-top: 50px;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin-top: -150px;
+    /* background-color: aquamarine; */
+}
+.project h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    /* margin-left: 600px; */
+
+}
+.new_1{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+
+}
+.inner_new_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.inner_new_1 img{
+    height: 250px;
+    width: 350px;
+    /* border-radius: 180px; */
+    border-radius: 45px;
+    margin-left: 40px;
+    
+}
+.outter_abc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+   
+    /* background-color: black; */
+}
+.abc{
+    /* align-items: center;
+    justify-content: center; */
+    height: 40px;
+    width: 120px;
+    background-color: yellow;
+    border: none;
+    border-radius: 45px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 135px;
+    font-weight: bolder;
+    font-size: medium;
+    
+}
+
+.inner_resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin-top: 70px;
+    /* background-color: aquamarine; */
+}
+.inner_resume button{
+    height: 60px;
+    width: 500px;
+    background-color: rgb(175, 175, 175);
+    border: none;
+    color: black;
+    border-radius: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.cou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    /* background-color: aqua; */
+    
+}
+.inner_cou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 180px;
+    width: 270px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 45px;
+    margin: 20px;
+    border: 1px;
+}
+.inner_cou i{
+    display: inline;
+    color: white;
+    font-size: 40px;
+}
+.inner_cou h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    margin-top: 10px;
+    color: white;
+}
+.inner_cou p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+#contact{
+    height: 400px;
+    width: 100%;
+    /* background-image: url(img/services.jpg); */
+}
+#contact h1{
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* margin-left: 500px; */
+    width: 100%;
+    margin-top: 10px;
+}
+
+#contact form{
+    height: 300px;
+    margin:auto;
+    width: 50%;
+    margin-top: 10px;
+}
+#contact form input{
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    margin-left: 25px;
+    border-radius: 45px;
+    padding: 10px;
+    border:1px;
+    margin-top: 10px;
+    color: white;
+}
+#contact form textarea{
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    margin-left: 25px;
+    border-radius: 45px;
+    padding: 10px;
+    border:1px;
+    margin-top: 10px;
+    color: white;
+}
+#contact form button{
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    margin-left: 25px;
+    border-radius: 45px;
+    padding: 10px;
+    border:1px;
+    margin-top: 10px;
+    color: black;
+    background-color: rgb(175, 175, 175);
+}
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="head_section">
+        <img src="img/print_line.png_1111.PNG" alt="">
+                <div>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <!-- <li><a href="#">Resume</a></li> -->
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    <div id="home"class="body">
+        <div class="inside_body">
+            <div class="inner_body">
+                <img src="img/IMG_20220217_160514_Bokeh.jpg" alt="">
+            </div>
+                <h1>Ali Hassan</h1>
+                <h3>Experienced web developer, blogger, and UI designer passionate about crafting seamless digital experiences. 
+                    Transforming ideas into intuitive interfaces and engaging content that captivates and converts.</h3>
+                <!-- <p>"Welcome to my creative digital space! I'm a versatile professional wearing multiple hats - a web developer, graphics designer, and a dedicated Computer Science scholar.
+
+                    With a passion for crafting immersive digital experiences, I blend technical expertise with artistic finesse.<br> My journey through Bachelor's in Computer Science has equipped me with a robust foundation in programming, algorithms, and innovative problem-solving.
+                    
+                    <br>As a web developer, I breathe life into ideas, weaving clean and responsive code to create seamless online platforms. Simultaneously, my flair for graphics design paints vibrant visual narratives, elevating brands and concepts to stand out in a crowded digital landscape.
+                    
+                    My portfolio is a tapestry of diverse projects, each reflecting my commitment to innovation, functionality, and aesthetics.<br> Whether it's designing captivating visuals or developing intuitive websites, I thrive on transforming ideas into captivating realities.
+                    
+                    I invite you to explore my portfolio, where technology converges with creativity. Let's collaborate and bring your digital vision to life!"</p> -->
+                <div class="logo">
+                    <img src="img/download.png" alt="">
+                    <img src="img/png-transparent-logo-css-css3-thumbnail.png" alt="">
+                    <img src="img/download (1).png" alt="">
+                    <img src="img/png-clipart-python-javascript-logo-soloist-blue-angle-thumbnail.png" alt="">
+                    <img src="img/png-transparent-django-python-computer-icons-logo-python-text-label-rectangle-thumbnail.png" alt="">
+                    <img src="img/png-clipart-clay-os-6-a-macos-icon-adobe-ilustrator-ai-logo.png" alt="">
+                    <img src="img/Photoshop_CC_icon.png" alt="">
+                    <img src="img/png-transparent-green-pencil-coreldraw-logo-cdr-adobe-illustrator-icon-free-corel-draw-miscellaneous-angle-grass-thumbnail.png" alt="">
+                   
+              </div>    
+    
+            </div>
+        </div>
+    </div>    
+    <div id="project"class="project">
+            <h1>Project</h1>
+        </div>
+    </div>
+    <!-- <div class="inner_project">
+        <div class="inside"><img src="img/Screenshot (1463).png" alt=""></div>
+        <div class="inside_1">
+                <img src="img/Screenshot (1464).png" alt="">
+                <img src="img/Screenshot (1465).png" alt="">
+                <img src="img/Screenshot (1466).png" alt="">
+        </div>
+        </div>
+
+
+        <div class="inner_project">
+            <div class="inside"><img src="img/Screenshot (1468).png" alt=""></div>
+            <div class="inside_1">
+                    <img src="img/Screenshot (1469).png" alt="">
+                    <img src="img/Screenshot (1470).png" alt="">
+                    <img src="img/Screenshot (1471).png" alt="">
+            </div>
+            </div>
+
+        
+            <div class="inner_project">
+                <div class="inside"><img src="img/03_card.JPG" alt=""></div>
+                <div class="inside_1">
+                        <img src="img/01_card.jpg" alt="">
+                        <img src="img/02_card.JPG" alt="">
+                        <img src="img/04_card.JPG" alt="">
+                </div>
+                </div>
+
+            
+                <div class="inner_project">
+                    <div class="inside"><img src="img/menu_1.JPG" alt=""></div>
+                    <div class="inside_1">
+                            <img src="img/01_card.jpg" alt="">
+                            <img src="img/02_card.JPG" alt="">
+                            <img src="img/04_card.JPG" alt="">
+                    </div>
+                    </div> -->
+                <div class="new_1">
+                    <div class="inner_new_1">
+                           <img src="img/Screenshot (1468).png" alt=""> 
+                    </div>
+                    <div class="inner_new_1">
+                        <img src="img/Screenshot (1463).png" alt=""> 
+                 </div>
+                 <div class="inner_new_1">
+                    <img src="img/03_card.JPG" alt=""> 
+             </div>
+             <!-- <div class="inner_new_1">
+                <img src="img/Screenshot (1468).png" alt=""> 
+         </div>
+         <div class="inner_new_1">
+            <img src="img/Screenshot (1468).png" alt=""> 
+     </div> -->
+        </div>
+        <div class="outter_abc">
+            <button class="abc">Visit</button>
+            <button id="xyz" class="abc">Visit</button>
+            <button id="qwe" class="abc">Visit</button>
+            <!-- <button class="abc">Visit</button>
+            <button class="abc">Visit</button> -->
+        </div>   
+        
+        <!-- <div class="resume">
+            <h1>Resume</h1>
+        </div> -->
+
+        <div id="res"class="inner_resume">
+            <button>View Resume</button>
+        </div>
+
+        <div class="cou">
+            <div class="inner_cou">
+                <i class="fa fa-users"></i>
+                <h1 class="counter">1000</h1>
+                <h4>HAPPY CLIENTS</h4>
+
+            </div>
+            <div class="inner_cou">
+                <i class="fa fa-coffee"></i>
+                <h1 class="counter">350</h1><span></span>
+                <h4>CUP OF COFFEE</h4>
+
+            </div>
+            <div class="inner_cou">
+                <i class="fa fa-globe"></i>
+                <h1 class="counter">10000</h1>
+                <h4>VISITERS</h4>
+
+            </div>
+
+        </div>
+
+       <div>
+
+        </div>
+
+    <div id="contact">
+            <h1>Get IN Touch</h1>
+       
+            <form>
+            <input type="text" class="form-control" class="form-control"placeholder="Your Name">
+            <input type="text" class="form-control" class="form-control"placeholder="Phone No.">
+            <input type="text" class="form-control" class="form-control"placeholder="E-Mail">
+            <textarea class="form-control" class="form-control"row="4"placeholder="Message">
+            </textarea>
+            <button type="submit" class="btn btn-primary">Send Message </button>
+            </form>
+        
+    </div>
+
+        
+
+   
+
+                    
+<!-- 
+                    <input type="text" class="form-control" class="form-control"placeholder="Your Name">
+              
+                <input type="number" class="form-control" class="form-control"placeholder="Phone No.">
+                
+                <input type="e-mail" class="form-control" class="form-control"placeholder="E-Mail">
+                
+                <textarea " class="form-control" class="form-control"row="4"placeholder="Message">
+                </textarea>
+               
+                <button type="submit" class="btn btn-primary">Send Message </button>
+               
+                </form> -->
+          
+    
+
+
+        </div>
+
+
+<!--        
+            <div class="col md-6 contact-info">
+            <div class="follow"><b>Address:</b> <i class="fa fa-map market"> </i> Aminpur Bazar Street#6 Faisalabad,Pakistan.</div>
+            <div class="follow"><b>Phone:</b> <i class="fa fa-phone">+ 92 320 74 42 104 </i> </div>
+            <div class="follow"><b>E-Mail:</b> <i class="fa fa-envelop-o">sabsekho786@gmail.com </i></div>
+            <div class="follow"><label><b>Get Social:</b></label>
+            <a href"#"><i class="fa fa-youtube-play"></i></a>
+            <a href"#"><i class="fa fa-facebook"></i></a>
+            <a href"#"><i class="fa fa-twitter"></i></a>
+            <a href"#"><i class="fa fa-google-plus"></i></a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+                    -->
+           <script>
+                let abc = document.querySelector(".abc").addEventListener("click", ()=>{
+                    window.open("file:///E:/Site/Project_Site/index.html");
+                }
+                )
+                let xyz = document.querySelector("#xyz").addEventListener("click", ()=>{
+                    window.open("file:///F:/Web%20Development/My_Website/Index.html");
+                }
+                )
+                let qwe = document.querySelector("#qwe").addEventListener("click", ()=>{
+                    window.open("https://www.behance.net/alinafees");
+                }
+                )
+                let res = document.querySelector("#res").addEventListener("click", ()=>{
+                    window.open("https://drive.google.com/file/d/1b1zUQF3DLTSxsE6DgMhwEpkmQ1rcXlUt/view");
+                })
+           </script>
+           <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+           <script src="jquery.counterup.min.js"></script>
+
+           <script>
+                jQuery(document).ready(function($){
+                         $('.counter').counterUp({
+                         delay: 10,
+                         time: 1000
+                });
+
+            });
+
+           </script>
+</body>
+</html>
